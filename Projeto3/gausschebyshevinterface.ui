@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>812</width>
-    <height>741</height>
+    <width>1122</width>
+    <height>819</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,8 +17,8 @@
    <widget class="QTextEdit" name="textFunc1">
     <property name="geometry">
      <rect>
-      <x>160</x>
-      <y>100</y>
+      <x>100</x>
+      <y>130</y>
       <width>221</width>
       <height>41</height>
      </rect>
@@ -27,8 +27,8 @@
    <widget class="QLabel" name="labelTitulo_2">
     <property name="geometry">
      <rect>
-      <x>220</x>
-      <y>0</y>
+      <x>370</x>
+      <y>10</y>
       <width>481</width>
       <height>71</height>
      </rect>
@@ -47,8 +47,8 @@
    <widget class="QLabel" name="labelY_2">
     <property name="geometry">
      <rect>
-      <x>90</x>
-      <y>100</y>
+      <x>30</x>
+      <y>130</y>
       <width>71</width>
       <height>31</height>
      </rect>
@@ -67,8 +67,8 @@
    <widget class="QTextEdit" name="textEditN1">
     <property name="geometry">
      <rect>
-      <x>470</x>
-      <y>100</y>
+      <x>410</x>
+      <y>130</y>
       <width>221</width>
       <height>41</height>
      </rect>
@@ -77,8 +77,8 @@
    <widget class="QLabel" name="labelY_3">
     <property name="geometry">
      <rect>
-      <x>420</x>
-      <y>100</y>
+      <x>360</x>
+      <y>130</y>
       <width>41</width>
       <height>31</height>
      </rect>
@@ -97,8 +97,8 @@
    <widget class="QTextEdit" name="textResult1">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>190</y>
+      <x>90</x>
+      <y>220</y>
       <width>231</width>
       <height>101</height>
      </rect>
@@ -107,8 +107,8 @@
    <widget class="QTextEdit" name="textResult2">
     <property name="geometry">
      <rect>
-      <x>470</x>
-      <y>190</y>
+      <x>410</x>
+      <y>220</y>
       <width>241</width>
       <height>101</height>
      </rect>
@@ -117,8 +117,8 @@
    <widget class="QLabel" name="labelY_8">
     <property name="geometry">
      <rect>
-      <x>170</x>
-      <y>150</y>
+      <x>110</x>
+      <y>180</y>
       <width>181</width>
       <height>31</height>
      </rect>
@@ -137,8 +137,8 @@
    <widget class="QLabel" name="labelY_9">
     <property name="geometry">
      <rect>
-      <x>480</x>
-      <y>150</y>
+      <x>420</x>
+      <y>180</y>
       <width>211</width>
       <height>31</height>
      </rect>
@@ -157,8 +157,8 @@
    <widget class="QLabel" name="labelY_10">
     <property name="geometry">
      <rect>
-      <x>370</x>
-      <y>380</y>
+      <x>510</x>
+      <y>450</y>
       <width>81</width>
       <height>31</height>
      </rect>
@@ -177,8 +177,8 @@
    <widget class="MplWidget" name="MplWidgetGaussChebyshev" native="true">
     <property name="geometry">
      <rect>
-      <x>190</x>
-      <y>420</y>
+      <x>330</x>
+      <y>490</y>
       <width>451</width>
       <height>241</height>
      </rect>
@@ -187,8 +187,8 @@
    <widget class="QPushButton" name="pushButtonCalcular">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>310</y>
+      <x>90</x>
+      <y>340</y>
       <width>111</width>
       <height>41</height>
      </rect>
@@ -200,8 +200,8 @@
    <widget class="QLabel" name="labelY_11">
     <property name="geometry">
      <rect>
-      <x>340</x>
-      <y>310</y>
+      <x>280</x>
+      <y>340</y>
       <width>201</width>
       <height>31</height>
      </rect>
@@ -220,11 +220,61 @@
    <widget class="QTextEdit" name="textEditDiferenca">
     <property name="geometry">
      <rect>
-      <x>540</x>
-      <y>310</y>
+      <x>480</x>
+      <y>340</y>
       <width>171</width>
       <height>41</height>
      </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>120</y>
+      <width>441</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>A quadratura de Gauss Chebyshev é uma 
+extensão da quadratura de Gauss.
+Para aproximar o cálculo de integrais do tipo:
+
+∫f(x)⁄√(1-x²)dx, no intervalo (-1, 1).
+
+Neste caso, a aproximação é realizada como:
+
+∫f(x)⁄√(1-x²)dx ≈ ∑i(1,n) wᵢf(xᵢ), onde:
+
+xᵢ = cos(((2i -1)π)/2n) e wᵢ = π/n.</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>850</x>
+      <y>90</y>
+      <width>61</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Sobre</string>
     </property>
    </widget>
   </widget>
@@ -233,7 +283,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>812</width>
+     <width>1122</width>
      <height>21</height>
     </rect>
    </property>

@@ -20,11 +20,11 @@ class MyApp(QMainWindow):
         super(MyApp, self).__init__()
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
-        
+        self.setWindowTitle("Método de Gauss Chebyshev")
+
         self.ui.pushButtonCalcular.clicked.connect(self.calcularChebyshev)
     
-    #coleta a funcao da interface e parametros de entrada e usa o metodo de hermite
-    #para calcular as raizes da funcao.    
+    #calcula a integral com o metodo de chebyshev e o metodo da scipy.integrate  
     def calcularChebyshev(self):
         cheby = ChebyshevQuadrature()
         f = lambda x: eval(self.ui.textFunc1.toPlainText())
@@ -35,11 +35,11 @@ class MyApp(QMainWindow):
         valorIntegral, erro = integrate.quad(fPython, -1, 1)
         self.ui.textResult2.setText((str)(valorIntegral))
         self.ui.textEditDiferenca.setText((str)(abs(resultado-valorIntegral)))
-        self.desenhaGraficos(fPython)
-        print(fPython(0.5))
+        self.desenhaGrafico(fPython)
+
     
     #funcao para desenhar o grafico na interface    
-    def desenhaGraficos(self, f1):
+    def desenhaGrafico(self, f1):
         
         x = np.arange(-0.9, 0.9, 0.1)
         
@@ -50,7 +50,8 @@ class MyApp(QMainWindow):
         self.ui.MplWidgetGaussChebyshev.canvas.axes.legend()
         self.ui.MplWidgetGaussChebyshev.canvas.axes.grid()
         self.ui.MplWidgetGaussChebyshev.canvas.draw()
-        
+
+
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
